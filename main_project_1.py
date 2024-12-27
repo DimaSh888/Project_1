@@ -38,15 +38,26 @@ h1.addLayout(w1)
 h1.addLayout(w2)
 win.setLayout(h1)
 i=1
-def change():
+def change_plu():
     global i
     
     pixmapimage=QPixmap(str(i)+"fl.jpg")
     label_p.setPixmap(pixmapimage)
     pixmapimage=pixmapimage.scaled(400,400,Qt.KeepAspectRatio)
     if i==6:
-        i=0
+        i=1
     i=i+1
-btn_n.clicked.connect(change)
+btn_n.clicked.connect(change_plu)
+def change_min():
+    global i
+    
+    pixmapimage=QPixmap(str(i)+"fl.jpg")
+    label_p.setPixmap(pixmapimage)
+    pixmapimage=pixmapimage.scaled(400,400,Qt.KeepAspectRatio)
+    if i==6:
+        i=1
+    i=i-1
+btn_l.clicked.connect(change_min)
+
 
 app.exec()
