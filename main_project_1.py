@@ -12,7 +12,7 @@ win.show()
 
 label_p=QLabel('')
 label_p.setFixedSize(400,400)
-label_n=QLabel('Гербарій екзотічніх квітів:')
+label_n=QLabel('Гербарій екзотичних квітів:')
 label_per=QLabel('Перемикач картинок:')
 label_p.hide()
 pixmapimage=QPixmap("1fl.jpg")
