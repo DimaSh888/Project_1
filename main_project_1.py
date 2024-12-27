@@ -54,8 +54,8 @@ def change_min():
     pixmapimage=QPixmap(str(i)+"fl.jpg")
     label_p.setPixmap(pixmapimage)
     pixmapimage=pixmapimage.scaled(400,400,Qt.KeepAspectRatio)
-    if i==6:
-        i=1
+    if i==0:
+        i=5
     i=i-1
 btn_l.clicked.connect(change_min)
 
